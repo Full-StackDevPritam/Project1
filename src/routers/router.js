@@ -56,13 +56,7 @@ AppRouter.get("/team", (req, res) => {
     });
 });
 
-AppRouter.get("/quote", (req, res) => {
-    res.render('quote', {
-        ToPage: 'Quote',
-        Heading: 'Quote',
-        title: 'Technolof - quote'
-    });
-});
+
 
 AppRouter.get("/testimonial", (req, res) => {
     res.render('testimonial', {
