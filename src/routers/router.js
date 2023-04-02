@@ -16,11 +16,11 @@ AppRouter.get("/about", (req, res) => {
         title: 'Technolof - About Us'
     });
 });
-AppRouter.get("/blog", (req, res) => {
-    res.render('blog', {
-        ToPage: 'Blog',
-        Heading: 'Blog',
-        title: 'Technolof - Blog'
+AppRouter.get("/portfolio", (req, res) => {
+    res.render('portfolio', {
+        ToPage: 'Portfolio',
+        Heading: 'Portfolio',
+        title: 'Technolof - Portfolio'
     });
 });
 

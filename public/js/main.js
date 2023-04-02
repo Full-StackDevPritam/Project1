@@ -4,7 +4,7 @@
     // Media Query
     setInterval(() => {
         (window.innerWidth < 430) ? $('a.navbar-brand h1').html("Technolof") : $('a.navbar-brand h1').html("Technolof Technologies");
-    }, 1000);
+    }, 10);
     
     // Spinner
     var spinner = function () {
