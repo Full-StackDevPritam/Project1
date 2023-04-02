@@ -1,5 +1,5 @@
 const url = 'https://script.google.com/macros/s/AKfycbw6OVxN_o0faDYwQwe9i2DzJPiiwlOpp8XMjUbHCwEhyYEi7n8F1tCzmaHJI5dJfQ/exec';
-const form = document.forms['requote'];
+const form = document.forms['re-quote'];
 const signal = document.querySelector('.signal');
 
 form.addEventListener("submit", (e) => {
