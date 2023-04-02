@@ -227,6 +227,10 @@ h6,
     z-index: 1;
 }
 
+.carousel-caption h1 {
+    font-size:4rem
+}
+
 @media (max-width: 576px) {
     .carousel-caption h5 {
         font-size: 14px;
