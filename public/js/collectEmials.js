@@ -1,6 +1,6 @@
-let url = 'https://script.google.com/macros/s/AKfycbw6OVxN_o0faDYwQwe9i2DzJPiiwlOpp8XMjUbHCwEhyYEi7n8F1tCzmaHJI5dJfQ/exec';
-let form = document.forms['re-quote'];
-let signal = document.querySelector('.signal');
+let url = 'https://script.google.com/macros/s/AKfycbzQT28m7_ZPSQ2YxuZWcjiPZHp3fpqzLgLS4oI4rNk1HPWZ2uhcfrtE7JOginMkSzE/exec';
+let form = document.forms['collect-email'];
+let signal = document.querySelector('.signalForSubscribe');
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -12,7 +12,7 @@ form.addEventListener("submit", (e) => {
     })
         .then(response => {
             signal.innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Success!</strong> Thanks for your subbmission..🤝
+            Thanks for Subscribing to us 🤝
             <button type="button" class="btn-close" data-bs-dismiss="alert"
                 aria-label="Close"></button>
         </div>`;

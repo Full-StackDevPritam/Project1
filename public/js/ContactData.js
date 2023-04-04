@@ -1,7 +1,7 @@
-const url = 'https://script.google.com/macros/s/AKfycby3j60KiEL9w89Cnh-EIyHvbDyzdl97uO-ofj2Q5DRUiL-vs8MoVTR0t9UNcezKacY/exec';
+let url = 'https://script.google.com/macros/s/AKfycby3j60KiEL9w89Cnh-EIyHvbDyzdl97uO-ofj2Q5DRUiL-vs8MoVTR0t9UNcezKacY/exec';
 
-const form = document.forms['contact-sheet'];
-const signal = document.querySelector('.success-mes');
+let form = document.forms['contact-sheet'];
+let signal = document.querySelector('.success-mes');
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
