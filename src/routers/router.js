@@ -95,7 +95,7 @@ AppRouter.get("/contact", (req, res) => {
 
 //     try {
 //         const resp = await fetch(url, options);
-    
+
 //         res.send(resp);
 
 //     } catch(e) {
@@ -106,6 +106,24 @@ AppRouter.get("/contact", (req, res) => {
 
 AppRouter.get("*", (req, res) => {
     res.status(404).render('404');
+});
+
+AppRouter.post("*", (req, res) => {
+    
+    const search = req.body.search;
+    
+    if (search === "/" || search === "home")
+        res.redirect("/");
+    else if (search === "contact" || search === "contact us")
+        res.redirect(`/contact`);
+    else if (search === "about" || search === "service") {
+        res.redirect("/#" + search);
+    }
+    else if (search === "services") {
+        res.redirect("/#" + "service");
+    }
+    else
+        res.status(404).render("404");
 });
 
 module.exports = AppRouter;
