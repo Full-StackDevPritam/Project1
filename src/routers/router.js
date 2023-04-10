@@ -112,14 +112,14 @@ AppRouter.post("*", (req, res) => {
 
     const search = req.body.search;
 
-    if (search === "/" || search === "home")
+    if (search.includes("home"))
         res.redirect("/");
-    else if (search === "contact" || search === "contact us")
+    else if (search.includes("contact"))
         res.redirect(`/contact`);
-    else if (search === "about" || search === "service") {
-        res.redirect("/#" + search);
+    else if (search.includes("about us")) {
+        res.redirect("/#" + "about");
     }
-    else if (search === "services") {
+    else if (search.includes("service")) {
         res.redirect("/#" + "service");
     }
     else
