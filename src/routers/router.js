@@ -109,9 +109,9 @@ AppRouter.get("*", (req, res) => {
 });
 
 AppRouter.post("*", (req, res) => {
-    
+
     const search = req.body.search;
-    
+
     if (search === "/" || search === "home")
         res.redirect("/");
     else if (search === "contact" || search === "contact us")
